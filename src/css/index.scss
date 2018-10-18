@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.site-header {
+  font-family: 'Oswald',sans-serif;
+      font-size: 45px;
+    line-height: 1.3;
+    margin: 30px 0 0;
+    padding: 0;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.list-header-box {
+  border-bottom: 1px solid gray;
+ margin-bottom: 20px;
+
+.list-header {
+
+  font-size: 20px !important;
+  padding: 0px 0px 10px 0px !important;
+  display: inline-block;
+}
+
+form {
+  display: inline-block;
+  input {
+   padding-right:40px !important;
+   width: 430px !important;
+  }
+  button {
+    border-radius: 0px;
+    color: black;
+    margin-left: -40px;
+  }
+}
+
+}
+.content-box {
+  width: 180px;
+  height: 240px;
+  float: left;
+  padding: 3px;
+  margin: 0px 2px 30px 2px;
+
+  img {
+    border-radius: 3px;
+    margin: 0 auto;
+  }
+  &:hover {
+   cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  .content-box {
+    width: 180px;
+    height: 240px;
+    float: none;
+    margin: 0 auto;
+  }
+ .list-header-box{
+   text-align: center;
+ }
+
+    #srch-box, #rcs-btn{
+    display: none !important;
+    }
+
+
+}
+.ab-holder{
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.ab-title {
+ font-size: 15px !important;
+ color: black;
+}
+
+.ab-author {
+font-size: 10px !important;
+text-decoration: underline;
+color: grey;
+}
+
+.ab-title , .ab-author {
+ text-decoration: none;
+}
+
+.loading-img {
+
+  background-image:  url('../img/loader.gif');
+  background-size: 170px;
+  width:170px;
+  height: 170px;
+}
+
+.loading-img-2 {
+  background-image:  url('../img/loader.gif');
+  background-size: 250px;
+  width:250px;
+  height: 250px;
+}
+
+.d-i {
+  h6{
+  font-size: 25px !important;
+  }
+  p{
+    display: inline;
+    text-decoration: underline;
+
+  }
+
+  b {
+    display: inline;
+    font-weight:400;
+    font-size: 14px;
+    color :grey;
+  }
+  i{
+    display: block;
+    font-size: 12px;
+  }
+  a{
+    border-radius: 0px;
+    margin-top:20px;
+    color: black !important;
+  }
+ .cp-b{
+ display: block;
+  padding-top:40px;
+ }
+}
+
+.modal-lg {
+  display: block;
+  position: relative;
+  bottom: 0px;
+}
