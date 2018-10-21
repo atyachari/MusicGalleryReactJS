@@ -1,5 +1,6 @@
 import React,{Component}  from 'react';
 import ClampLines from 'react-clamp-lines';
+import Like from '../../containers/Like/Like';
 
 class AlbumContent extends Component {
   constructor() {
@@ -34,6 +35,8 @@ class AlbumContent extends Component {
                     lines={1}
                     />
                     </a>
+                    <Like />
+
 
              </div>
       )

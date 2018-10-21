@@ -1,0 +1,38 @@
+
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.like {
+  color: #FFFFFF;
+  outline: none;
+  background: lightblue;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  box-shadow: 0 0 22px 4px rgba(0,0,0,0.1);
+  height: 20px;
+  width: 50px;
+  transition: box-shadow 0.3s;
+  &:hover {
+     box-shadow: 3px 3px 22px 4px rgba(0,0,0,0.1);
+  }
+}
+.unlike {
+  color: #ea0000;
+  outline: none;
+  background: #fff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  box-shadow: 0 0 22px 4px rgba(0,0,0,0.1);
+  height: 20px;
+  width: 50px;
+  transition: box-shadow 0.3s;
+  &:hover {
+     box-shadow: 3px 3px 22px 4px rgba(0,0,0,0.1);
+  }
+}
