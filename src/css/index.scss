@@ -15,6 +15,10 @@ body {
     text-align: center;
 }
 
+.music-header{
+  margin-top: 11px;
+}
+
 .list-header-box {
   border-bottom: 1px solid gray;
  margin-bottom: 20px;
@@ -30,12 +34,32 @@ form {
   display: inline-block;
   input {
    padding-right:40px !important;
-   width: 430px !important;
+   width: 100% !important;
   }
   button {
     border-radius: 0px;
     color: black;
     margin-left: -40px;
+  }
+}
+
+@media (max-width: 600px) {
+    form {
+        display: inline-block;
+        input {
+         width: 100% !important;
+         padding-right: 20px !important;
+         margin-top: 8px;
+        }
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+@media(max-width: 400px) {
+  music-content{
+    margin-top: 46px;
   }
 }
 

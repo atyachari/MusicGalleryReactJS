@@ -90,7 +90,7 @@ class Login extends Component {
   }
 }
 const style = {
- margin: 15,
+ margin: 10,
 };
 
 export default Login;

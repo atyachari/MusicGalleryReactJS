@@ -22,7 +22,7 @@ const Routing = () => {
                into that route.  We have this render method, so this is going to be invoked when the path matches
                and then if we're authenticated, we render the comonent just as we normally would*/}
             {/* It will take us to desired pages.*/}
-            <Typography><Link to="/login">Home Page</Link></Typography><br />
+            
             <Typography><Link to="/Music">Music Place</Link></Typography>
 
             {/* It will use the corresponding components for respective pages.*/}

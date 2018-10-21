@@ -9,6 +9,7 @@ class AlbumContent extends Component {
   }
   render(){
     return (
+        <div className='music-content'>
           <div className="content-box">
                  <a onClick={() => this.props.toggle(this.props.actor.id.attributes['im:id'])}>
                     <img className="loading-img"
@@ -17,7 +18,7 @@ class AlbumContent extends Component {
                         onLoad={(e)=>{e.target.className = '';}}
                         onMouseEnter={() => this.setState({hovered: true})}
                         onMouseLeave={() => this.setState({hovered: false})}
-                        style={{transform: `${this.state.hovered ? 'scale(1.10,1.10)' : 'scale(1,1)'}`}}
+                        style={{transform: `${this.state.hovered ? 'scale(1.05,1.05)' : 'scale(1,1)'}`}}
                     />
                  </a>
 
@@ -39,6 +40,7 @@ class AlbumContent extends Component {
 
 
              </div>
+           </div>  
       )
   }
 };

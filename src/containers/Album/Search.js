@@ -67,7 +67,7 @@ class Search extends Component {
            <div className="App">
              <div className="container">
                <div className="list-header-box">
-                 <h6 className="display-4 list-header"> Music Mania </h6>
+                 <h6 className="display-4 list-header music-header"> Music Mania </h6>
                    <form className="form-inline input-group-sm my-lg-0 my-sm-0 float-right" onSubmit={this.preventDefault} >
                       <input className="form-control my-sm-1" type="text" id="search-input" onChange={this.searchAlbums} placeholder="Enter to Search" />
                     </form>
