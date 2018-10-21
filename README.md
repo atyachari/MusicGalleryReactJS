@@ -13,3 +13,7 @@
   ->Login with client side authentication(Added functionality)
   
   ->Use of React routers and materialistic ui react
+
+  ->Like feature
+  
+  ->Responsive Design
