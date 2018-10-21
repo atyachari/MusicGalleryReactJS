@@ -26,7 +26,7 @@ body {
 .list-header {
 
   font-size: 20px !important;
-  padding: 0px 0px 10px 0px !important;
+  padding: 0px 0px 5px 0px !important;
   display: inline-block;
 }
 
@@ -43,12 +43,12 @@ form {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     form {
         display: inline-block;
         input {
-         width: 100% !important;
-         padding-right: 20px !important;
+         width: 80% !important;
+         padding-right: 0.5px !important;
          margin-top: 8px;
         }
     }
@@ -60,6 +60,7 @@ form {
 @media(max-width: 400px) {
   music-content{
     margin-top: 46px;
+    margin-right: -12px
   }
 }
 
@@ -79,16 +80,20 @@ form {
    cursor: pointer;
   }
 }
+.music-text-no-found{
+  margin-top:45px;
+}
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 500px)  {
   .content-box {
-    width: 180px;
+    width: 160px;
     height: 240px;
     float: none;
     margin: 0 auto;
   }
  .list-header-box{
-   text-align: center;
+   text-align: left;
+   margin-bottom: 47px;
  }
 
     #srch-box, #rcs-btn{
