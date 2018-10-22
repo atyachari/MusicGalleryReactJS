@@ -1,3 +1,5 @@
+  Deployed Link: [Demo](http://3.0.96.251) 
+  
   ->Rendering music album info and image using API
 
   ->(started constructing modal) 
