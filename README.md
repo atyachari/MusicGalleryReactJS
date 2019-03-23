@@ -1,4 +1,4 @@
-  Deployed Link: [Demo](http://3.0.96.251) 
+  Deployed Link: [Demo](http://musicgallery.surge.sh) 
   
   ->Rendering music album info and image using API
 
