@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import './Like.css';
 
-class Like extends Component {
+class Like extends PureComponent {
   constructor(props) {
     super(props);
     this.state = { liked: false };

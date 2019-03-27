@@ -5,17 +5,20 @@
   "dependencies": {
     "@material-ui/core": "^3.2.2",
     "axios": "^0.18.0",
+    "lodash": "^4.17.11",
     "material-ui": "^0.20.2",
     "node-sass": "^4.9.4",
-    "react": "^16.5.2",
+    "react": "^16.8.5",
     "react-clamp-lines": "^1.1.0",
-    "react-dom": "^16.5.2",
+    "react-dom": "^16.8.5",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.5",
+    "react-scripts": "^2.1.8",
+    "react-window": "^1.7.1",
     "reactstrap": "^6.5.0",
     "redux": "^4.0.1",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "why-did-you-update": "^1.0.6"
   },
   "scripts": {
     "start": "react-scripts start",

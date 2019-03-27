@@ -1,4 +1,4 @@
-import React,{Component}  from 'react';
+import React,{Component, memo}  from 'react';
 import ClampLines from 'react-clamp-lines';
 import Like from '../../containers/Like/Like';
 
@@ -45,4 +45,4 @@ class AlbumContent extends Component {
   }
 };
 
-export default AlbumContent;
+export default memo(AlbumContent);

@@ -4,6 +4,22 @@ import AlbumContent from '../../components/Album/AlbumContent';
 import AlbumModal from '../../components/Album/AlbumModal'
 import { Modal,ModalBody,ModalHeader,ModalFooter,Row,Col } from "reactstrap";
 import uniqid from 'uuid';
+import { FixedSizeList as List } from 'react-window';
+ 
+// const Row = ({ index, style }) => (
+//   <div style={style}>Row {index}</div>
+// );
+ 
+// const Example = () => (
+//   <List
+//     height={150}
+//     itemCount={1000}
+//     itemSize={35}
+//     width={300}
+//   >
+//     {Row}
+//   </List>
+// );
 
 class Gallery extends Component {
     constructor()
@@ -71,14 +87,19 @@ class Gallery extends Component {
     }
 
     gridTemplateBuilder = () => {
-      var items =  this.props.albums.map((actor,key) => {
+      var items =  this.props.albums.map((actor,id) => {
         return (
+          <List
+            height={150}
+            itemCount={100}
+            itemSize={35}
+            width={300}
+          >
             <AlbumContent
               actor={actor}
               toggle={this.toggle}
-              key={uniqid()}
-
-            />
+              key={id}
+            /></List>
             );
           });
       return items;
@@ -91,9 +112,13 @@ class Gallery extends Component {
                           albuminfo = {this.state.albuminfo}
                           toggle={this.toggle}
                         />;
+
+
+
+        
         if(this.props.albums.length > 0){
           let musicGrid = this.gridTemplateBuilder();
-           musicGrid.push(musicInfo);
+          //  musicGrid.push(musicInfo);
            return musicGrid;
          }
         if(this.props.albums.length === 0  &&  this.props.appstate === 'loaded' ){

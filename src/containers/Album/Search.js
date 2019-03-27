@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Gallery from './Gallery';
 import api from '../../Api/api';
-import uniqid from 'uuid';
+import {debounce} from 'lodash';
 import '../../App.css';
 
 class Search extends Component {
@@ -69,7 +69,7 @@ class Search extends Component {
                <div className="list-header-box">
                  <h6 className="display-4 list-header music-header"> Music Mania </h6>
                    <form className="form-inline input-group-sm my-lg-0 my-sm-0 float-right" onSubmit={this.preventDefault} >
-                      <input className="form-control my-sm-1" type="text" id="search-input" onChange={this.searchAlbums} placeholder="Enter to Search" />
+                      <input className="form-control my-sm-1" type="text" id="search-input" onChange={debounce(this.searchAlbums, 300)} placeholder="Enter to Search" />
                     </form>
                </div>
                <Gallery albums={this.state.list}  appstate={this.state.apiState}/>
