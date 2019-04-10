@@ -9,7 +9,7 @@
 .like {
   color: #FFFFFF;
   outline: none;
-  background: lightblue;
+  background: #00BED9;
   border: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
@@ -22,7 +22,7 @@
   }
 }
 .unlike {
-  color: #ea0000;
+  color: #00BED9;
   outline: none;
   background: #fff;
   border: none;

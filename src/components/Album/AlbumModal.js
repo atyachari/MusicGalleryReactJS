@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React from 'react';
 import { Modal,ModalBody,ModalHeader,ModalFooter,Row,Col } from "reactstrap";
 import uniqid from 'uuid';
 
@@ -32,4 +32,4 @@ const AlbumModal = (props) => {
   );
 }
 
-export default memo(AlbumModal);
+export default AlbumModal;
